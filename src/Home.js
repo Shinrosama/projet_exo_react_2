@@ -2,10 +2,10 @@ import Products from "./Products";
 
 function Home(){
     return (
-        <home>
+        <main>
             <h2>Titre 2 </h2>
             <Products/>
-        </home>
+        </main>
     )
 }
 
