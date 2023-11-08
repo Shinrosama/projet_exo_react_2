@@ -1,9 +1,15 @@
-const isUserLogged = false;
-
-const itemsIncart = 3
-
 
 function Header(){
+    
+    const isUserLogged = true;
+    const itemsIncart = 3
+
+    const userLogged = {
+        lastname : "Shinro",
+        firstname : "Shinn",
+        job : "Web dev",
+    }
+
     return(
         <header>
             <h1>Exo 3 mon titre</h1>
@@ -11,11 +17,11 @@ function Header(){
             
             <ul>
                 {isUserLogged?(
-                <li>Shinro</li>
-            ):(
+                <li>{userLogged.lastname} {userLogged.firstname} {userLogged.job}</li>
+                ):(
                 <li>Not logged</li>
-            )}
-                
+                )}
+
                 <li>Home</li>
                 <li>Product</li>
                 <li>Contact</li>
