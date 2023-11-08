@@ -8,7 +8,7 @@ function Header(){
         lastname : "Shinro",
         firstname : "Shinn",
         job : "Web dev",
-    }
+    };
 
     return(
         <header>

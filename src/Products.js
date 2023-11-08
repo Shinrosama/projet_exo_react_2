@@ -1,20 +1,19 @@
 function Products() {
+
+  const productsFromDb = [
+    "Mocassin à glands", "Charantaises", "Talons aiguille"
+  ]
+
     return (
       <section>
-        <article>
-          <h2>Achetez cette magnifique paire de mocassins à glands</h2>
-          <p>300e</p>
-        </article>
-  
-        <article>
-          <h2>Turbo mixeur 3000</h2>
-          <p>200e</p>
-        </article>
-  
-        <article>
-          <h2>Aspire-tout</h2>
-          <p>350e</p>
-        </article>
+       {productsFromDb.map((product) =>{
+
+        return(
+          <article>
+            <h2>{product}</h2>
+          </article>
+        )
+       })}
       </section>
     );
   }
